@@ -1,27 +1,73 @@
-<header>
-  <div class="hearo-head">
-    <nav class="navbar is-primary">
-      <div class="container">
-
-
-        <div class="navbar-burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="navbar-menu">
-          <a href="#" class="navbar-item">Home</a>
-          <a href="#" class="navbar-item">Portfolio</a>
-          <a href="#" class="navbar-item">About Me</a>
-          <a href="#" class="navbar-item">Contact</a>
-        </div>
-      </div>
-    </nav>
+<header class="highlighted-section">
+  <div>
+    {{navigation}}
   </div>
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">{{ @blog.title }}</h1>
-      <h2 class="subtitle">{{ @blog.description }}</h2>
+      <div class="columns">
+        <div class="column is-two-thirds">
+          <div class="container">
+            <h3 class="">Hello, I'm</h3>
+            <h1 class="title is-capitalized has-text-weight-semibold is-large">Ahmed Halat</h1>
+            <h2 class="subtitle">Student at University of Toronto and SDE intern</h2>
+            <table class="table is-transparent">
+              <tbody>
+              <tr>
+                <td>AGE</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>Address</td>
+                <td>Greater Toronto Area</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>ahmedhalat@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>ahmedhalat@gmail.com</td>
+              </tr>
+              </tbody>
+            </table>
+            <div class="columns cl-md">
+              <div class="column">
+                <div class="button-container">
+                  <a href="#" class="button-filled button-text-filled button widget-button" role="button">
+                    <span class="button-content-wrapper">
+                      <span class="button-text-filled">Contact</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="button-container">
+                  <a href="#" class="button-hollow button-text-filled button widget-button" role="button">
+                    <span class="button-content-wrapper">
+                      <span class="button-text-hollow">Download CV</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="container links">
+              <span class="icon is-medium">
+                <i class="fab fa-2x fa-linkedin"></i>
+              </span>
+              <span class="icon is-medium">
+                <i class="fab fa-2x fa-github-square"></i>
+              </span>
+          </div>
+        </div>
+
+      </div>
+
     </div>
+
   </div>
 </header>
