@@ -1,5 +1,5 @@
 {
-  "name": "IDea-Overflow",
+  "name": "idea-overflow",
   "description": "A minimalist custom theme",
   "version": "0.0.1",
   "engines": {
@@ -10,6 +10,6 @@
     "email": "ahmedhalat@gmail.com"
   },
   "config":{
-    "post_per_page": 6
+    "post_per_page": 3
   }
 }

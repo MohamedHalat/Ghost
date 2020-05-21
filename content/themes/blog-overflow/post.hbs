@@ -2,19 +2,22 @@
 
 {{#post}}
   <article>
+
       {{#if feature_image}}
-        <header class="post__background-image" style="background-image: url({{feature_image}})">
+        <header class="post__background-image container" style="background-image: url({{feature_image}})">
       {{else}}
-        <header class="post__background-image" style="background-image: url('https://parsecgaming.com/static/opengraph-25a5b334c1fb7035e98e3511891d659c.png')">
+        <header class="post__background-image container" style="background-image: url('https://parsecgaming.com/static/opengraph-25a5b334c1fb7035e98e3511891d659c.png')">
       {{/if}}
       <div class="post__background-image-text">
         <h1 class="title has-text-white">{{title}}</h1>
         <time class="subtitle has-text-white">{{date format="DD MMMM YYYY"}}</time>
       </div>
-
     </header>
-    <section>
-      {{content}}
+
+    <section class="container">
+      <div class="content">
+        {{content}}
+      </div>
     </section>
   </article>
 {{/post}}
