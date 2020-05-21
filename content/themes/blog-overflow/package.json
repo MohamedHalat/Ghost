@@ -1,0 +1,15 @@
+{
+  "name": "IDea-Overflow",
+  "description": "A minimalist custom theme",
+  "version": "0.0.1",
+  "engines": {
+    "ghost": ">=3.0.0"
+  },
+  "author":{
+    "name": "Ahmed Halat",
+    "email": "ahmedhalat@gmail.com"
+  },
+  "config":{
+    "post_per_page": 6
+  }
+}

@@ -1,0 +1,38 @@
+<article class="card">
+
+    <div class="card-image">
+      <figure class="iamge is-4by3">
+        {{#if feature_image}}
+          <img src="{{feature_image}}" alt="{{title}}">
+        {{else}}
+          <img class="widget-image" src="https://parsecgaming.com/static/opengraph-25a5b334c1fb7035e98e3511891d659c.png">
+        {{/if}}
+      </figure>
+    </div>
+
+  <div class="card-content">
+    {{#if author.profile_image}}
+    <div class="media">
+      <div class="media-left">
+        <fieldset class="is-48x48">
+          <img src="{{author.profile_image}}" alt="Profile Image">
+        </fieldset>
+      </div>
+    </div>
+    {{/if}}
+    <a href="{{url}}" class="title is-4">{{title}}</a>
+    <div class="content">
+      <p>
+        {{#if meta_description}}
+          {{meta_description}}
+        {{else}}
+          {{excerpt words="40"}}...
+        {{/if}}
+      </p>
+      <p>
+        {{author}} in {{tags}} on
+        <time>{{date}}</time>
+      </p>
+    </div>
+  </div>
+</article>
