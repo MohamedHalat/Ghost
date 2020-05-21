@@ -23,6 +23,40 @@ body{
   background: none;
 }
 
+@media (max-width:1054px) {
+  .navbar-menu{
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    margin: .5rem 0;
+    transition: max-height .4s ease;
+  }
+
+  .navbar-menu.is-active {
+    max-height: 400em;
+  }
+ }
+
+.icon-panel{
+  box-shadow: 10px 15px 40px 0px rgba(0, 0, 0, 0.09);
+  margin-top: -60px;
+  margin-bottom: 0px;
+  padding: 20px 40px 10px 40px;
+  background-color: white;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.profile-image{
+  padding-top: 10%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #EEEEEE;
+  border-radius: 4px 4px 4px 4px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
 .cl-md{
   width: 420px;
 }

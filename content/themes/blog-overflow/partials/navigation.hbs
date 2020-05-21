@@ -2,7 +2,6 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
-      <a href="#">Ahmed Halat</a>
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navHome">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -17,30 +16,11 @@
         <a class="navbar-item is-medium {{#if current}}is-active{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
         {{/foreach}}
 
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-light">Log in</a>
-          </div>
-        </div>
       </div>
     </div>
 
   </div>
 </nav>
-
-<script type="text/javascript">
-(function(){
-  var burger = document.querySelector('.burger');
-  var nav = document.querySelector('#'+ burger.dataset.target)
-
-  burger.addEventListener('click', function () {
-    burger.classList.toggle('is-active');
-    nav.classList.toggle('is-active')
-  })
-}
-
-)
-</script>
 
 <!--
 

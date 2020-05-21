@@ -2,7 +2,8 @@
 /**
  * NAVIGATION BURGER MENU
  */
-(function(){
+
+window.onload = function (){
   var burger = document.querySelector('.burger');
   var nav = document.querySelector('#'+ burger.dataset.target)
 
@@ -11,5 +12,3 @@
     nav.classList.toggle('is-active')
   })
 }
-
-)
